@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This project is deployed on codesnadbox, you can visit it on [`CodeSandBox Deployment`](https://rzjd5x-3000.csb.app/)
 
+## Deploy on Vercel
+
+You can use this link to check it on [`Vercel`](https://deep-origin-project.vercel.app/)
+
 ## Run it in local
 
 ```bash
@@ -13,8 +17,7 @@ pnpm i && pnpm dev
 Then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Based on the requiremment, we choose NextJS as our framework with can easily set up mockup APIs. 

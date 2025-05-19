@@ -32,6 +32,21 @@ export async function GET(request: Request) {
         { type: "users", users: getRandomItems(users, 2) },
       ]]
     },
+    {
+      id: 2,
+      name: "3 Columns",
+      headers: ["Plasmid", "Volume", "Length", "Description", "Assigned"],
+      data: [[
+        { type: "link", label: "Link 1", url: "https://www.example.com" },
+        { type: "tag", label: "Tag 1", id: "tag-1" },
+        { type: "users", users: getRandomItems(users, 1) },
+      ],
+      [
+        { type: "link", label: "Link 2", url: "https://www.example.com" },
+        { type: "tag", label: "Tag 2", id: "tag-2" },
+        { type: "users", users: getRandomItems(users, 2) },
+      ]]
+    },
   ];
   return new Response(JSON.stringify(grids), {
     status: 200,
