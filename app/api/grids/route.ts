@@ -35,7 +35,7 @@ export async function GET(request: Request) {
     {
       id: 2,
       name: "3 Columns",
-      headers: ["Plasmid", "Volume", "Length", "Description", "Assigned"],
+      headers: ["Plasmid", "Volume", "Assigned"],
       data: [[
         { type: "link", label: "Link 1", url: "https://www.example.com" },
         { type: "tag", label: "Tag 1", id: "tag-1" },
