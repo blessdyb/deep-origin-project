@@ -1,0 +1,111 @@
+.UserCell {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 40px;
+
+    .UserCellItem {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        span {
+            padding: 0 4px;
+            white-space: nowrap;
+        }
+    }
+
+    .UserCellExtra {
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &:hover {
+            .UserCellExtraUsers {
+                display: block;
+            }
+        }
+
+        .UserCellExtraNumber {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #eee;
+            display: block;
+            text-align: center;
+            line-height: 24px;  
+            border: 1px solid #888;
+        }
+
+        .UserCellExtraUsers {
+            position: absolute;
+            display: none;;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            padding: 6px 6px 0;
+            border-radius: 10px;
+
+            &:after {
+                width: 0; 
+                height: 0; 
+                content: '';
+                position: absolute;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #fff;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .UserCellEdit {
+        position: absolute;
+        left: -4px;
+        top: 100%;
+        width: calc(100% + 4px);
+        border: 1px solid #888;
+        z-index: 1000;
+        max-height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-color: #fff;
+
+        .UserCellEditList {
+            padding-left: 4px;
+
+            .UserCellItemSelected {
+                background-color: #f0f0f0;
+            }
+
+            .UserCellItem {
+                &:hover {
+                   background-color: #f0f0f0;
+                }
+            }
+        }
+    }
+
+    .UserCellEditSearch {
+        input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #888;
+            border-radius: 4px;
+            padding-left: 4px;
+            font-size: 16px;
+            color: #333;
+        }
+    }
+}
