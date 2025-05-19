@@ -1,5 +1,5 @@
 
-import type { Grid as GridType, User, UsersColumn } from "@/types";
+import type { Grid as GridType, User } from "@/types";
 import UserCell from "../UserCell";
 import style from "./index.module.scss";
 import { useState } from "react";

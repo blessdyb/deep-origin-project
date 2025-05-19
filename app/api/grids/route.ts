@@ -1,5 +1,5 @@
 import type { Grid } from "@/types";
-import { users } from "../users/route";
+import { users } from "@/data";
 
 function getRandomItems<T>(arr: T[], count: number): T[] {
   const shuffled = [...arr];
@@ -11,6 +11,7 @@ function getRandomItems<T>(arr: T[], count: number): T[] {
 }
 
 export async function GET(request: Request) {
+  console.log(request.url);
   const grids: Grid[] = [
     {
       id: 1,

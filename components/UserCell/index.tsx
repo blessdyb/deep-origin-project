@@ -1,7 +1,6 @@
 import type { User } from "@/types";
 import style from "./index.module.scss";
-import { useEffect, useState, useRef, Suspense, use } from "react";
-import { fa } from "@faker-js/faker";
+import { useEffect, useState, useRef } from "react";
 
 type AnyEvent = MouseEvent | TouchEvent;
 
